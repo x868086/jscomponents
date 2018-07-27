@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>vuecomponents</title>
+    <style scoped>
+      div,ul,li,a{
+        margin:0px;
+        padding:0px;
+      }
+
+      .clearfix:after{
+        content:"";
+        display:block;
+        clear:both;
+      }
+
+      ul,li,a{
+        list-style:none;
+        font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+        color:#34495e;
+        text-decoration:none;
+      }
+
+      ul{
+        margin-top:30px;
+        font-size:20px;
+      }
+
+      .items{
+        font-size:15px;
+        padding:20px 0px 0px 50px;
+      }
+
+      /* #app{
+        border-top:1px solid #ddd;
+      } */
+
+      .lf{
+        float:left;
+        height:500px;
+        width:300px;
+      }
+
+      .rh{
+        float:left;
+        border-left:2px solid #ddd;
+        height:500px;
+      }
+
+      .router-link-active{
+        color:#42b983;
+        text-decoration:none;
+        font-weight:bold;
+        font-size:16px;
+      }
+
+
+
+
+    
+    
+    </style>
+  </head>
+  <body>
+    <div id="app" class="clearfix">
+      <div class="lf">
+        <ul>Vue组件
+          <li class="items">
+            <router-link to="/cart">购物车组件-基于vuex状态管理</router-link>
+          </li>
+
+          <li class="items">
+          <router-link to="/tab">tab组件-基于slot插槽分发</router-link>
+          </li>
+
+          <li class="items">
+            <router-link to="/table">带排序功能的表格组件</router-link>
+          </li>
+
+          <li class="items">
+            <router-link to="/questions">动态渲染问卷调查组件</router-link>
+          </li>
+
+          <li class="items">
+              <router-link to="/inputnumber">数字数组组件</router-link>
+          </li>
+        </ul>
+      </div>
+
+      <div class="rh">
+        <router-view></router-view>
+      </div>
+    </div>
+  </body>
+</html>
