@@ -69,7 +69,7 @@ export default {
 
 <style scoped>
     div{
-        width:400px;
+        width:200px;
         margin:0 auto;
         text-align:center;
     }

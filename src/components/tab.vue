@@ -42,8 +42,11 @@ export default {
 </script>
 
 
-<style>
-
+<style scoped>
+    p,h3{
+        margin:0px;
+        padding:0px
+    }
 </style>
 
 
