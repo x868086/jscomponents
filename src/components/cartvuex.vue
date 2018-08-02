@@ -25,8 +25,9 @@
                     <button v-on:click="decrement(list)"
                     v-bind:disabled="list.num <= 1">-</button>
                     <button v-on:click="increment(list)"
-                    v-bind:disabled="productList[index].count === 0">+</button>
+                    v-bind:disabled="productList[productList.findIndex(e=>{return e.id===list.id})].count === 0">+</button>
                     <span>合计:{{list.total | currency}}</span>
+                    <!--当购物车列表中的某商品id和商品列表中的某商品id相同时，判断，如果商品列表中的count等于0则购物车的+按钮失效-->
                 </li>
             </ul>
             <div class="line"></div>
